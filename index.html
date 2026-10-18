@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Islandwise — Send Bahamian dollars anywhere in the Bahamas instantly</title><link rel="icon" href="data:,"><link rel="stylesheet" href="styles.css"></head><body>
+<header class="nav"><div class="wrap navin"><a class="logo" href="#"><span class="mark">◆</span> islandwise</a>
+<nav class="links"><a href="#how">How it works</a><a href="#calc">Fees</a><a href="#banks">Banks</a><a href="#trust">Security</a></nav>
+<div class="hdr"><button class="wallet" data-add type="button" title="Add money to your islandwise balance (simulated)"><span class="wl">Balance</span><b id="walletBal">B$0.00</b><span class="plus" aria-hidden="true">＋</span><span class="sr">Add money</span></button><button class="btn sm" data-open>Send money</button></div></div></header>
+<main>
+<section class="hero"><div class="wrap grid2">
+<div><span class="pill">🇧🇸 Now: send from USD or BSD — recipient gets BSD instantly</span>
+<h1>Send USD or BSD to the Bahamas <span class="hl">instantly</span></h1>
+<p class="lead">Send from US dollars or Bahamian dollars — your recipient always gets BSD. One tiny transparent fee ($0.99 + 0.37%), BSD pegged 1:1 to USD, and money that lands in seconds, not days.</p>
+<div class="ctas"><button class="btn" data-open>Send money</button><a class="btn ghost" href="#how">See how it works</a></div>
+<div class="badges"><span>✓ Regulated & licensed</span><span>✓ 256-bit encryption</span><span>✓ 4.8★ from 12k reviews</span></div></div>
+<div class="card calc" id="calc"><h3>Fee calculator</h3>
+<label>Send from</label><div class="seg" id="cCur" role="group" aria-label="Send from currency"><button type="button" class="on" data-c="USD">🇺🇸 USD</button><button type="button" data-c="BSD">🇧🇸 BSD</button></div>
+<label>You send</label><div class="field"><input id="cSend" type="number" min="1" value="1000"><span class="cur" id="cCurLbl">🇺🇸 USD</span></div>
+<ul class="breakdown"><li><span class="bd-icon">−</span><b id="cFee">$4.69</b> Our fee</li><li><span class="bd-icon">=</span><b id="cConv">$995.31</b> Amount they receive</li><li><span class="bd-icon">×</span><b id="cRate">1 USD = 1.0000 BSD</b> <span id="cNote">BSD pegged 1:1 to USD</span></li></ul>
+<label>Recipient gets</label><div class="field"><input id="cGet" type="number" readonly><span class="cur">🇧🇸 BSD</span></div>
+<p class="eta">⚡ Should arrive <b>in seconds</b></p>
+<p class="save">You save up to <b id="cSave">$42.00</b> vs. typical banks</p>
+<button class="btn full" data-open>Send money</button></div></div></section>
+<section id="trust" class="trust"><div class="wrap tgrid"><div><b>B$2.4B+</b><span>sent across the Bahamas</span></div><div><b>&lt; 20s</b><span>median delivery</span></div><div><b>0.47%</b><span>average fee</span></div><div><b>24/7</b><span>Nassau-based support</span></div></div></section>
+<section id="how" class="wrap how"><h2>How it works</h2><p class="sub">Sending Bahamian dollars to someone in the Bahamas, step by step.</p>
+<div class="steps"><div class="card step"><div class="sh"><div class="n">1</div><span class="ic" aria-hidden="true">💵</span></div><h3>You send USD or BSD</h3><p>Pick your send-from currency and amount. We show the fee and the exact BSD your recipient gets before you confirm. Fee: <b>$0.99 + 0.37%</b> in the currency you send.</p></div>
+<div class="card step"><div class="sh"><div class="n">2</div><span class="ic" aria-hidden="true">🏝️</span></div><h3>Converted if needed, then moved locally</h3><p>Sending USD? It converts at the mid-market rate (BSD is pegged 1:1) and then moves domestically in BSD. Sending BSD? It stays BSD the whole way — no FX. Either way it routes straight to a Bahamas bank or islandwise wallet.</p></div>
+<div class="card step"><div class="sh"><div class="n">3</div><span class="ic" aria-hidden="true">⚡</span></div><h3>They get BSD in seconds</h3><p>Your recipient is credited in Bahamian dollars almost immediately (bank account or email/phone). You get a reference number. Arrives in seconds, not days.</p></div></div>
+<div class="ctas" style="justify-content:center;margin-top:32px"><button class="btn" data-open>Send money</button></div></section>
+<section id="banks" class="banks"><div class="wrap">
+<div class="bhead"><div><h2>Bahamas banks</h2><p class="sub">Link a local bank to fund transfers, or send BSD to any of these banks. Directory based on the Central Bank of The Bahamas list of licensed authorised-dealer banks.</p></div>
+<div class="bactions"><button class="btn ghost sm" data-add type="button">＋ Add money to islandwise balance</button><button class="linkbtn small" id="bReset" type="button" hidden>Reset demo data</button></div></div>
+<div class="bbar"><div class="field bsearch"><span class="si" aria-hidden="true">⌕</span><input id="bSearch" type="search" placeholder="Search banks, e.g. RBC, Fidelity, CIBC" aria-label="Search banks"></div><span class="small" id="bCount"></span></div>
+<div class="bgrid" id="bGrid"></div>
+<p class="small bnote">Initials are islandwise placeholders, not bank logos. Bank linking and instant settlement are simulated — no connection is made to any bank. Source: <a href="https://www.centralbankbahamas.com/bank-supervision/supervised-financial-institutions" target="_blank" rel="noopener">Central Bank of The Bahamas — Supervised Financial Institutions</a>.</p>
+</div></section>
+<section class="wrap band card"><div><h2>Family in Nassau? Business in Freeport?</h2><p>Pay rent, support loved ones, or settle invoices across all 700 islands.</p></div><button class="btn" data-open>Start a transfer</button></section>
+</main>
+<footer><div class="wrap fgrid"><div><a class="logo" href="#"><span class="mark">◆</span> islandwise</a><p class="small">Demo product. No real payments are processed.</p></div>
+<div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a></div>
+<div><h4>Legal</h4><a href="#">Terms of use</a><a href="#">Privacy policy</a><a href="#">Cookie policy</a><a href="#">Complaints</a></div>
+<div><h4>Help</h4><a href="#">Help centre</a><a href="#">Contact</a><a href="#">Status</a></div></div>
+<div class="wrap small legal">© 2026 Islandwise Ltd. Fictional company for demonstration. Not affiliated with Wise. Licensed by nobody, regulated by imagination.</div></footer>
+
+<div class="modal" id="modal" hidden><div class="sheet card">
+<button class="x" id="close" aria-label="Close">×</button>
+<div class="prog"><i></i><i></i><i></i></div>
+<div class="view" data-step="1"><h2>How much are you sending?</h2>
+<label>Send from</label><div class="seg" id="mCur" role="group" aria-label="Send from currency"><button type="button" class="on" data-c="USD">🇺🇸 USD</button><button type="button" data-c="BSD">🇧🇸 BSD</button></div>
+<label>You send</label><div class="field"><input id="mSend" type="number" min="1" value="500"><span class="cur" id="mCurLbl">🇺🇸 USD</span></div>
+<label for="mFrom">Pay from</label><div class="field fromf"><span class="fsel" aria-hidden="true"><span class="fn"></span><b class="fb"></b><i>▾</i></span><select id="mFrom"></select></div><p class="small" id="mFromTxt"></p>
+<label>They receive</label><div class="field"><input id="mGet" readonly><span class="cur">🇧🇸 BSD</span></div>
+<p class="small" id="mFeeTxt"></p><p class="err" id="e1"></p><button class="btn full" data-next>Continue</button></div>
+<div class="view" data-step="2" hidden><h2>Who are you sending to?</h2>
+<label>Full name</label><div class="field"><input id="rName" placeholder="e.g. Kayla Rolle"></div>
+<div class="tabs"><button class="tab on" data-m="bank">Bahamas bank</button><button class="tab" data-m="wise">Email / phone</button></div>
+<div id="mBank"><label for="rBank">Bank</label><div class="field"><select id="rBank"></select></div>
+<label>Account number</label><div class="field"><input id="rAcct" inputmode="numeric" placeholder="7–12 digits"></div></div>
+<div id="mWise" hidden><label>Email or phone</label><div class="field"><input id="rContact" placeholder="kayla@example.com or +1 242 555 0134"></div></div>
+<p class="err" id="e2"></p><div class="row"><button class="btn ghost" data-back>Back</button><button class="btn" data-next>Review</button></div></div>
+<div class="view" data-step="3" hidden><h2>Review your transfer</h2><ul class="review" id="rev"></ul>
+<div class="row"><button class="btn ghost" data-back>Back</button><button class="btn" id="go">⚡ Send instantly</button></div></div>
+<div class="view done" data-step="4" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-15"/></svg>
+<h2>Money delivered!</h2><p id="doneTxt"></p><p class="small" id="ref"></p><button class="btn full" id="again">Done</button></div>
+</div></div>
+
+<div class="modal" id="linkModal" hidden><div class="sheet card lsheet" role="dialog" aria-modal="true" aria-label="Link a bank">
+<button class="x" data-xl aria-label="Close">×</button>
+<div class="demo-banner" role="note"><b>Demo only</b> — real bank linking requires a licensed payments partner.</div>
+<div class="lv" data-l="pick"><h2>Link your bank</h2><p class="small">Choose your bank. You'll sign in on a simulated bank screen.</p>
+<div class="field bsearch"><span class="si" aria-hidden="true">⌕</span><input id="lSearch" type="search" placeholder="Search banks" aria-label="Search banks"></div><div class="blist" id="lList"></div></div>
+<div class="lv" data-l="login" hidden><div class="lhead"></div><h2>Sign in to your bank</h2>
+<p class="small">This is a <b>simulated</b> bank login. Enter anything — nothing is checked, sent or stored.</p>
+<label for="lUser">Username <span class="tag demo">DEMO</span></label><div class="field"><input id="lUser" autocomplete="off" spellcheck="false" placeholder="DEMO — any username"></div>
+<label for="lPass">Password <span class="tag demo">DEMO</span></label><div class="field"><input id="lPass" type="password" autocomplete="off" placeholder="DEMO — any password"></div>
+<p class="err" id="lErr"></p>
+<div class="row"><button class="btn ghost" data-lback="pick" type="button">Back</button><button class="btn" id="lSign" type="button">Sign in</button></div>
+<p class="small lock">🔒 Simulated · no network requests · credentials discarded immediately</p></div>
+<div class="lv" data-l="acct" hidden><div class="lhead"></div><h2>Choose accounts</h2><p class="small">Select which (generated, fake) accounts to link to islandwise.</p>
+<div class="accts" id="lAccts"></div><p class="err" id="lErr2"></p>
+<div class="row"><button class="btn ghost" data-lback="login" type="button">Back</button><button class="btn" id="lLink" type="button">Link accounts</button></div></div>
+<div class="lv done" data-l="ok" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-15"/></svg><h2>Bank linked</h2><p id="lOkTxt"></p><button class="btn full" id="lDone" type="button">Continue</button></div>
+</div></div>
+
+<div class="modal" id="addModal" hidden><div class="sheet card" role="dialog" aria-modal="true" aria-label="Add money">
+<button class="x" data-xa aria-label="Close">×</button>
+<div class="demo-banner" role="note"><b>Demo only</b> — real bank linking requires a licensed payments partner.</div>
+<div data-a="1"><h2>Add money</h2><p class="small">Pull money from a linked bank into your islandwise balance (simulated).</p>
+<div class="wbig"><span>islandwise balance</span><b id="aBal">B$0.00 BSD</b></div>
+<label for="aFrom">From</label><div class="field fromf"><span class="fsel" aria-hidden="true"><span class="fn"></span><b class="fb"></b><i>▾</i></span><select id="aFrom"></select></div><p class="small" id="aFromTxt"></p>
+<label for="aAmt">Amount</label><div class="field"><input id="aAmt" type="number" min="1" value="100"><span class="cur" id="aCur">BSD</span></div>
+<p class="small">No fee to add · credited as BSD (USD at the 1:1 peg)</p>
+<p class="err" id="aErr"></p><button class="btn full" id="aGo" type="button">Add money</button></div>
+<div class="done" data-a="2" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-15"/></svg><h2>Money added</h2><p id="aOk"></p><button class="btn full" id="aDone" type="button">Done</button></div>
+</div></div>
+<script src="app.js"></script></body></html>
